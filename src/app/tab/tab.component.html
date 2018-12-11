@@ -1,0 +1,24 @@
+<div class="pc-tab">
+  <ng-container *ngFor="let item of data || []; let i = index;">
+    <!-- checked="checked" -->
+    <input [checked]="selectedItem === item" [id]="'tab' + (i + 1)"
+    type="radio"
+    name="pct"
+    (click)="tabChange(item);" />
+  </ng-container>
+  <nav>
+    <ul>
+      <li *ngFor="let item of data || []; let i = index;" [class]="'tab' + (i + 1)">
+        <label [for]="'tab' + (i + 1)">{{ item?.title }}</label>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <div *ngFor="let item of data || []; let i = index;" [class]="'tab' + (i + 1)">
+      <h2>{{ item?.subTitle }}</h2>
+      <p>{{ item?.content }}</p>
+    </div>
+  </section>
+</div>
+
+{{ selectedItem | json }}
