@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tab',
@@ -6,18 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab.component.scss']
 })
 export class TabComponent implements OnInit {
-  data: any[] = [];
+  @Input() data: any[] = [];
   selectedItem: any;
 
   constructor() {}
 
   ngOnInit() {
-    this.data = [
-      { title: 'aaa', subTitle: 'aaaa', content: 'aaaaa' },
-      { title: 'bbb', subTitle: 'bbbb', content: 'bbbbb' },
-      { title: 'ccc', subTitle: 'cccc', content: 'ccccc' }
-    ];
-
     if (this.data.length) {
       this.selectedItem = this.data[0];
     }

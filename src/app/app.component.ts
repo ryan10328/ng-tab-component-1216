@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tab-componet-lab';
+  data: any[] = [
+    { title: 'aaa', subTitle: 'aaaa', content: 'aaaaa' },
+    { title: 'bbb', subTitle: 'bbbb', content: 'bbbbb' },
+    { title: 'ccc', subTitle: 'cccc', content: 'ccccc' }
+  ];
 }
