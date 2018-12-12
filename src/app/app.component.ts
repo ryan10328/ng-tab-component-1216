@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   data: any[] = [
-    { title: 'aaa', subTitle: 'aaaa', content: 'aaaaa' },
-    { title: 'bbb', subTitle: 'bbbb', content: 'bbbbb' },
-    { title: 'ccc', subTitle: 'cccc', content: 'ccccc' }
+    {title: 'aaa', subTitle: 'aaaa', content: 'aaaaa'},
+    {title: 'bbb', subTitle: 'bbbb', content: 'bbbbb'},
+    {title: 'ccc', subTitle: 'cccc', content: 'ccccc'}
   ];
 }

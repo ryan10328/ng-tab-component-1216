@@ -1,10 +1,9 @@
 <div class="pc-tab">
   <ng-container *ngFor="let item of data || []; let i = index;">
-    <!-- checked="checked" -->
     <input [checked]="selectedItem === item" [id]="'tab' + (i + 1)"
-    type="radio"
-    name="pct"
-    (click)="tabChange(item);" />
+           type="radio"
+           name="pct"
+           (click)="tabChange(item);"/>
   </ng-container>
   <nav>
     <ul>
