@@ -11,4 +11,6 @@ export class AppComponent {
     {title: 'bbb', subTitle: 'bbbb', content: 'bbbbb'},
     {title: 'ccc', subTitle: 'cccc', content: 'ccccc'}
   ];
+
+  obj: any = {};
 }
