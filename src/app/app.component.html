@@ -1,5 +1,7 @@
 <h1>PureCSS Tabs</h1>
-<app-tab [data]="data" [(ngModel)]="obj.selectedItem"></app-tab>
+<form [formGroup]="frm">
+  <app-tab [data]="data" formControlName="tabControl"></app-tab>
+</form>
 <footer>
-  {{ obj.selectedItem | json }}
+  {{ frm.get('tabControl')?.value | json }}
 </footer>
